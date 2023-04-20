@@ -17,14 +17,20 @@
 export {
   StripePayments,
   StripePaymentsError,
+  getStripePayments,
+} from "./init";
+
+export type {
   StripePaymentsErrorCode,
   StripePaymentsOptions,
-  getStripePayments,
 } from "./init";
 
 export {
   CREATE_SESSION_TIMEOUT_MILLIS,
   createCheckoutSession,
+} from "./session";
+
+export type {
   CreateCheckoutSessionOptions,
   CommonLineItemParams,
   CommonSessionCreateParams,
@@ -39,33 +45,41 @@ export {
 } from "./session";
 
 export {
-  GetPaymentsOptions,
-  Payment,
-  PaymentChangeType,
-  PaymentSnapshot,
-  PaymentStatus,
   getCurrentUserPayment,
   getCurrentUserPayments,
   onCurrentUserPaymentUpdate,
 } from "./payment";
 
+export type {
+  GetPaymentsOptions,
+  Payment,
+  PaymentChangeType,
+  PaymentSnapshot,
+  PaymentStatus,
+} from "./payment";
+
 export {
-  GetProductOptions,
-  GetProductsOptions,
-  Price,
-  Product,
-  WhereFilter,
-  WhereFilterOp,
   getPrice,
   getPrices,
   getProduct,
   getProducts,
 } from "./product";
 
+export type {
+  GetProductOptions,
+  GetProductsOptions,
+  Price,
+  Product,
+  WhereFilter,
+} from "./product";
+
 export {
   getCurrentUserSubscription,
   getCurrentUserSubscriptions,
   onCurrentUserSubscriptionUpdate,
+} from "./subscription";
+
+export type {
   GetSubscriptionsOptions,
   Subscription,
   SubscriptionChangeType,

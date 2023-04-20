@@ -216,7 +216,7 @@ export interface GetProductsOptions {
   limit?: number;
 }
 
-export { WhereFilterOp } from "firebase/firestore";
+export type { WhereFilterOp } from "firebase/firestore";
 
 /**
  * A filter constraint that can be applied to database queries. Consists of a field name (in
